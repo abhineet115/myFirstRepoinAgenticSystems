@@ -1,6 +1,14 @@
 age = int(input("Enter your age:"))
-id = int(input("If you have id card press 1 otherwise press 0:"))
+
+id = input("Has ID:").strip().lower()
+if id =="true":
+    id = True
+elif  id == "false":
+    id = False
+else:
+        print("Invalid input. Please type 'True' or 'False'.")
+
 if age>=18 and id ==True:
     print("Entry allowed")
-else:
-    pass
+else :
+    print("Entry Not allowed")
