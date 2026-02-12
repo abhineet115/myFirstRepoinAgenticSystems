@@ -13,7 +13,7 @@ def student_result(average):
     return "Fail"
 def main():
     student_name = "Abhineet"
-    student_score = [20,55,73]
+    student_score = [29,55,73]
     
     greeting = name_fn(student_name)
     student_subject, student_avg = score(student_score)
