@@ -21,6 +21,6 @@ def main():
 
     print(greeting)
     print(f"Subject:{student_subject}")
-    print(f"Score:{student_avg:.1f}")
-    print(f"Result:{student_res}")
+    print(f"Average Score: {student_avg:.1f}")
+    print(f"Result: {student_res}")
 main()
