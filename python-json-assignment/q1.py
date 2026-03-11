@@ -1,6 +1,5 @@
-# Test change for git commit verification
+# completed assignment
 import json
-import os
 
 data ={
   "id": "req_123",
@@ -20,9 +19,6 @@ print("Confidence: ",json_data["result"]["confidence"])
 if json_data["result"]["confidence"] < 0.9:
   print("Warning: Low confidence level")
 
-# Save the response to a file in the same directory as this script
-script_dir = os.path.dirname(os.path.abspath(__file__))
-output_path = os.path.join(script_dir, "response.json")
 
-with open(output_path, "w") as f:
+with open("response.json", "w") as f:
   json.dump(json_data, f)
