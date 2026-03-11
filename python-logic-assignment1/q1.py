@@ -1,4 +1,3 @@
-# completed assignment
 import pandas as pd
 
 load_data = pd.read_csv("sample_data.csv")
