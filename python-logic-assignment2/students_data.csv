@@ -1,0 +1,16 @@
+Name,Score,Passed,Category
+Alice,85,True,A
+Bob,42,False,C
+Charlie,67,True,B
+Diana,92,True,A
+Edward,55,False,C
+Fiona,78,True,B
+George,88,True,A
+Hannah,49,False,C
+Ian,72,True,B
+Julia,95,True,A
+Kevin,60,True,B
+Laura,38,False,D
+Mike,81,True,A
+Nina,58,True,B
+Oscar,44,False,C
