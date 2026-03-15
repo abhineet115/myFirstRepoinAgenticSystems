@@ -29,7 +29,7 @@ df = pd.DataFrame(data)
 print(df)
 
 
-null_values = df.isnull(True)
+null_values = df.isnull()
 print(null_values)
 
 df["Salary"] = df["Salary"].fillna(df["Salary"].mean())
