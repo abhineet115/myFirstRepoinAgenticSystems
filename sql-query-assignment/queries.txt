@@ -1,0 +1,43 @@
+create table students (
+    id integer primart key,
+    name varchar(100),
+    score integer,
+    passed boolean,
+    class integer
+    );
+
+
+INSERT INTO students (id, name, score, passed, class)
+VALUES 
+    (1, 'Aarav', 92, TRUE, 10),
+    (2, 'Diya', 76, TRUE, 10),
+    (3, 'Rohan', 65, FALSE, 9),
+    (4, 'Meera', 88, TRUE, 10),
+    (5, 'Kabir', 54, FALSE, 9),
+    (6, 'Ananya', 95, TRUE, 10),
+    (7, 'Rahul', 81, TRUE, 9),
+    (8, 'Sneha', 73, TRUE, 9),
+    (9, 'Arjun', 84, TRUE, 10),
+    (10, 'Kavya', 69, FALSE, 9);
+
+select * from students
+
+select name, score from students
+
+select * from students where score > 80;
+
+select * from students where score > 80 AND passed = 1;
+
+select * from students where score > 85 OR class = 9;
+
+select * from students where NOT passed = 1;
+
+select DISTINCT class from students;
+
+select * from students ORDER BY score DESC LIMIT 5;
+
+select * from students ORDER BY class ASC, score DESC;
+
+select score AS final_score from students;
+
+select name, score from students where score > 75 ORDER BY score DESC LIMIT 3;
