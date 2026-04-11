@@ -1,18 +1,6 @@
-# ============================================================
-# Iris Dataset - Exploratory Data Analysis (EDA)
-# ============================================================
-# This script performs a comprehensive EDA on the Iris dataset
-# using Pandas for data manipulation and Plotly for visualization.
-# ============================================================
-
-# --- Step 0: Import Required Libraries ---
 import pandas as pd
 import plotly.express as px
 
-# ============================================================
-# STEP 1: Load the Dataset
-# ============================================================
-# Load the Iris dataset from the provided URL.
 url = "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv"
 df = pd.read_csv(url)
 print("[OK] Dataset loaded successfully!\n")
